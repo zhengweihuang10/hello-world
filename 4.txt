@@ -1,0 +1,93 @@
+Jan  1 09:56:41 kyos pulseaudio[1045]: Failed to load module "module-alsa-card" (argument: "device_id="2" name="platform-hdmiin-sound" card_name="alsa_card.platform-hdmiin-sound" namereg_fail=false tsched=yes fixed_latency_range=no ignore_dB=no deferred_volume=yes use_ucm=yes avoid_resampling=no card_properties="module-udev-detect.discovered=1""): initialization failed.
+Jan  1 09:56:42 kyos ukui-screensaver-dialog: [ukui-screensaver-dialog] window show!!
+Jan  1 09:56:42 kyos ukui-screensaver-dialog: [ukui-screensaver-dialog] window show done!!
+Jan  1 09:56:42 kyos ukui-screensaver-dialog: [ukui-screensaver-dialog] window active event!!
+Jan  1 09:57:05 kyos systemd[761]: Starting System upgrade background detection program...
+Jan  1 09:57:05 kyos systemd[761]: ky-background-upgrade-manul.service: Succeeded.
+Jan  1 09:57:05 kyos systemd[761]: Started System upgrade background detection program.
+Jan  1 09:57:51 kyos systemd[1]: Starting Show Plymouth Boot Screen...
+Jan  1 09:57:51 kyos plymouthd[5691]: 01:57:51.871 main.c:1977:initialize_environment                            : initializing minimal work environment
+Jan  1 09:57:51 kyos plymouthd[5691]: 01:57:51.871 main.c:1989:initialize_environment                            : checking if '/dev/tty1' exists
+Jan  1 09:57:51 kyos plymouthd[5691]: 01:57:51.871 main.c:1855:check_verbosity                                   : checking if tracing should be enabled
+Jan  1 09:57:51 kyos plymouthd[5691]: '
+Jan  1 09:57:51 kyos plymouthd[5691]: 01:57:51.871 main.c:1904:check_verbosity                                   : tracing shouldn't be enabled!
+Jan  1 09:57:51 kyos plymouthd[5691]: 01:57:51.871 main.c:1923:check_logging                                     : checking if console messages should be redirected and logged
+Jan  1 09:57:51 kyos plymouthd[5691]: 01:57:51.871 main.c:1932:check_logging                                     : logging will be enabled!
+Jan  1 09:57:51 kyos plymouthd[5691]: 01:57:51.871 main.c:2002:initialize_environment                            : source built on Oct 23 2023
+Jan  1 09:57:51 kyos plymouthd[5691]: 01:57:51.871 main.c:2013:initialize_environment                            : Making sure /run/plymouth exists
+Jan  1 09:57:51 kyos plymouthd[5691]: 01:57:51.871 ply-utils.c:596:ply_create_directory                          : directory '/run/plymouth' already exists
+Jan  1 09:57:51 kyos plymouthd[5691]: 01:57:51.871 main.c:2017:initialize_environment                            : initialized minimal work environment
+Jan  1 09:57:51 kyos plymouthd[5691]: 01:57:51.871 main.c:1800:attach_to_running_session                         : creating new terminal session
+Jan  1 09:57:51 kyos plymouthd[5691]: 01:57:51.871 ply-terminal-session.c:220:ply_terminal_session_attach        : ptmx not passed in, creating one
+Jan  1 09:57:51 kyos plymouthd[5691]: 01:57:51.871 ply-terminal-session.c:178:open_pseudoterminal                : opening device '/dev/ptmx'
+Jan  1 09:57:51 kyos plymouthd[5691]: 01:57:51.872 ply-terminal-session.c:184:open_pseudoterminal                :  opened device '/dev/ptmx'
+Jan  1 09:57:51 kyos plymouthd[5691]: 01:57:51.872 ply-terminal-session.c:186:open_pseudoterminal                : unlocking pseudoterminal
+Jan  1 09:57:51 kyos plymouthd[5691]: 01:57:51.872 ply-terminal-session.c:193:open_pseudoterminal                : unlocked pseudoterminal
+Jan  1 09:57:51 kyos plymouthd[5691]: 01:57:51.872 ply-terminal-session.c:230:ply_terminal_session_attach        : redirecting system console to terminal device
+Jan  1 09:57:51 kyos plymouthd[5691]: 01:57:51.872 ply-terminal-session.c:239:ply_terminal_session_attach        : done redirecting system console to terminal device
+Jan  1 09:57:51 kyos plymouthd[5691]: 01:57:51.872 ply-terminal-session.c:369:ply_terminal_session_start_logging : logging incoming console messages
+Jan  1 09:57:51 kyos plymouthd[5691]: 01:57:51.872 main.c:1679:tell_systemd_to_print_details                     : no telling systemd to start printing details
+Jan  1 09:57:51 kyos plymouthd[5691]: 01:57:51.872 main.c:714:get_cache_file_for_mode                            : returning cache file '/var/lib/plymouth//boot-duration'
+Jan  1 09:57:51 kyos plymouthd[5691]: 01:57:51.872 main.c:294:load_settings                                      : Trying to load /etc/plymouth//plymouthd.conf
+Jan  1 09:57:51 kyos plymouthd[5691]: 01:57:51.872 ply-key-file.c:175:ply_key_file_load_group                    : trying to load group Daemon
+Jan  1 09:57:51 kyos plymouthd[5691]: 01:57:51.872 ply-key-file.c:262:ply_key_file_load_groups                   : key file has no more groups
+Jan  1 09:57:51 kyos plymouthd[5691]: 01:57:51.872 main.c:308:load_settings                                      : Checking if /run/plymouth/themes/text/text.plymouth exists
+Jan  1 09:57:51 kyos plymouthd[5691]: 01:57:51.872 main.c:310:load_settings                                      : /run/plymouth/themes/text/text.plymouth not found, fallbacking to /usr/share/plymouth/themes/
+Jan  1 09:57:51 kyos plymouthd[5691]: 01:57:51.872 ply-key-file.c:359:ply_key_file_get_raw_value                 : key file does not have entry for key 'ShowDelay'
+Jan  1 09:57:51 kyos plymouthd[5691]: 01:57:51.872 ply-key-file.c:359:ply_key_file_get_raw_value                 : key file does not have entry for key 'DeviceTimeout'
+Jan  1 09:57:51 kyos plymouthd[5691]: 01:57:51.872 ply-key-file.c:359:ply_key_file_get_raw_value                 : key file does not have entry for key 'DeviceScale'
+Jan  1 09:57:51 kyos plymouthd[5691]: 01:57:51.872 main.c:441:find_system_default_splash                         : System configured theme file is '/usr/share/plymouth/themes/text/text.plymouth'
+Jan  1 09:57:51 kyos plymouthd[5691]: 01:57:51.872 main.c:294:load_settings                                      : Trying to load /run/plymouth/plymouthd.defaults
+Jan  1 09:57:51 kyos plymouthd[5691]: 01:57:51.872 ply-key-file.c:84:ply_key_file_open_file                      : Failed to open key file /run/plymouth/plymouthd.defaults: No such file or directory
+Jan  1 09:57:51 kyos plymouthd[5691]: 01:57:51.872 main.c:451:find_distribution_default_splash                   : failed to load /run/plymouth/plymouthd.defaults, trying /usr/share/plymouth//
+Jan  1 09:57:51 kyos plymouthd[5691]: 01:57:51.872 main.c:294:load_settings                                      : Trying to load /usr/share/plymouth//plymouthd.defaults
+Jan  1 09:57:51 kyos plymouthd[5691]: 01:57:51.872 ply-key-file.c:84:ply_key_file_open_file                      : Failed to open key file /usr/share/plymouth//plymouthd.defaults: No such file or directory
+Jan  1 09:57:51 kyos plymouthd[5691]: 01:57:51.872 main.c:453:find_distribution_default_splash                   : failed to load /usr/share/plymouth//plymouthd.defaults
+Jan  1 09:57:51 kyos plymouthd[5691]: 01:57:51.872 main.c:886:plymouth_should_show_default_splash                : checking if plymouth should show default splash
+Jan  1 09:57:51 kyos plymouthd[5691]: 01:57:51.872 ply-key-file.c:84:ply_key_file_open_file                      : Failed to open key file /etc/vconsole.conf: No such file or directory
+Jan  1 09:57:51 kyos plymouthd[5691]: 01:57:51.872 ply-device-manager.c:915:create_devices_from_terminals        : checking for consoles
+Jan  1 09:57:51 kyos plymouthd[5691]: 01:57:51.872 ply-device-manager.c:693:add_consoles_from_file               : opening /sys/class/tty/console/active
+Jan  1 09:57:51 kyos plymouthd[5691]: 01:57:51.872 ply-device-manager.c:701:add_consoles_from_file               : reading file
+Jan  1 09:57:51 kyos plymouthd[5691]: 01:57:51.872 ply-device-manager.c:739:add_consoles_from_file               : console /dev/tty1 found!
+Jan  1 09:57:51 kyos plymouthd[5691]: 01:57:51.872 ply-device-manager.c:1011:ply_device_manager_watch_devices    : Creating non-graphical devices, since renderers are being explicitly skipped
+Jan  1 09:57:51 kyos plymouthd[5691]: 01:57:51.872 ply-device-manager.c:827:create_devices_for_terminal_and_rende: creating devices for  (renderer type: 4294967295) (terminal: /dev/tty1)
+Jan  1 09:57:51 kyos plymouthd[5691]: 01:57:51.872 main.c:1006:on_keyboard_added                                 : listening for keystrokes
+Jan  1 09:57:51 kyos plymouthd[5691]: 01:57:51.872 main.c:1010:on_keyboard_added                                 : listening for escape
+Jan  1 09:57:51 kyos plymouthd[5691]: 01:57:51.872 main.c:1014:on_keyboard_added                                 : listening for backspace
+Jan  1 09:57:51 kyos plymouthd[5691]: 01:57:51.872 main.c:1018:on_keyboard_added                                 : listening for enter
+Jan  1 09:57:51 kyos plymouthd[5691]: 01:57:51.872 ply-terminal.c:637:ply_terminal_open                          : trying to open terminal '/dev/tty1'
+Jan  1 09:57:51 kyos plymouthd[5691]: 01:57:51.872 ply-terminal.c:430:ply_terminal_refresh_geometry              : looking up terminal text geometry
+Jan  1 09:57:51 kyos plymouthd[5691]: 01:57:51.872 ply-terminal.c:442:ply_terminal_refresh_geometry              : terminal is now 80x25 text cells
+Jan  1 09:57:51 kyos plymouthd[5691]: 01:57:51.872 ply-terminal.c:480:get_active_vt                              : Remembering that initial vt is 7
+Jan  1 09:57:51 kyos plymouthd[5691]: 01:57:51.872 ply-device-manager.c:800:create_text_displays_for_terminal    : adding text display for terminal /dev/tty1
+Jan  1 09:57:51 kyos plymouthd[5691]: 01:57:51.872 main.c:2314:main                                              : entering event loop
+Jan  1 09:57:51 kyos plymouthd[5691]: 01:57:51.886 ply-boot-server.c:350:print_connection_process_identity       : connection is from pid 5692 (/bin/plymouth show-splash --debug) with parent pid 1 (/sbin/init)
+Jan  1 09:57:51 kyos plymouthd[5691]: 01:57:51.886 ply-boot-server.c:449:ply_boot_connection_on_request          : got show splash request
+Jan  1 09:57:51 kyos plymouthd[5691]: 01:57:51.886 main.c:854:plymouth_should_ignore_show_splash_calls           : checking if plymouth should be running
+Jan  1 09:57:51 kyos plymouthd[5691]: 01:57:51.886 main.c:955:on_show_splash                                     : at least one display already available, so loading splash
+Jan  1 09:57:51 kyos plymouthd[5691]: 01:57:51.886 main.c:886:plymouth_should_show_default_splash                : checking if plymouth should show default splash
+Jan  1 09:57:51 kyos plymouthd[5691]: 01:57:51.886 main.c:367:show_detailed_splash                               : Showing detailed splash screen
+Jan  1 09:57:51 kyos plymouthd[5691]: 01:57:51.886 main.c:1699:load_built_in_theme                               : Loading built-in theme
+Jan  1 09:57:51 kyos plymouthd[5691]: 01:57:51.886 plugins/splash/details/plugin.c:159:create_plugin             : creating plugin
+Jan  1 09:57:51 kyos plymouthd[5691]: 01:57:51.886 main.c:1714:load_built_in_theme                               : attaching plugin to event loop
+Jan  1 09:57:51 kyos plymouthd[5691]: 01:57:51.886 main.c:1717:load_built_in_theme                               : attaching progress to plugin
+Jan  1 09:57:51 kyos plymouthd[5691]: 01:57:51.886 ply-boot-splash.c:174:ply_boot_splash_add_text_display        : adding 80x25 text display
+Jan  1 09:57:51 kyos plymouthd[5691]: 01:57:51.886 ply-terminal.c:633:ply_terminal_open                          : terminal /dev/tty1 is already open
+Jan  1 09:57:51 kyos plymouthd[5691]: 01:57:51.886 ply-boot-splash.c:486:ply_boot_splash_show                    : showing splash screen
+Jan  1 09:57:51 kyos plymouthd[5691]: 01:57:51.886 ply-device-manager.c:1114:ply_device_manager_activate_keyboard: activating keyboards
+Jan  1 09:57:51 kyos plymouthd[5691]: 01:57:51.886 ply-event-loop.c:1142:ply_event_loop_free_destinations_for_sou: freeing destination (1, 0x5555ea8418, 0x5555ea7a80) of fd 9
+Jan  1 09:57:51 kyos plymouthd[5691]: 01:57:51.886 ply-boot-server.c:346:print_connection_process_identity       : connection is from toplevel init process (/sbin/init)
+Jan  1 09:57:51 kyos plymouthd[5691]: 01:57:51.886 ply-boot-server.c:401:ply_boot_connection_on_request          : got update request
+Jan  1 09:57:51 kyos plymouthd[5691]: 01:57:51.886 main.c:183:on_update                                          : updating status to 'plymouth-start.service'
+Jan  1 09:57:51 kyos plymouthd[5691]: 01:57:51.886 plugins/splash/details/plugin.c:314:update_status             : status update
+Jan  1 09:57:51 kyos plymouthd[5691]: 01:57:51.886 ply-event-loop.c:1142:ply_event_loop_free_destinations_for_sou: freeing destination (1, 0x5555ea8418, 0x5555ea7a80) of fd 9
+Jan  1 09:57:51 kyos systemd[1]: Started Show Plymouth Boot Screen.
+Jan  1 09:57:52 kyos python3[659]: sess[c1]: user<ky> Remote<0> Active<0> Service<lightdm-autologin>
+Jan  1 09:57:52 kyos python3[659]: activeUser :  None
+Jan  1 09:57:52 kyos ukui-screensaver-dialog: [ukui-screensaver-dialog] startup!!
+Jan  1 09:58:04 kyos plymouthd[5691]: 01:58:04.223 ply-keyboard.c:230:process_keyboard_input                     : return key!
+Jan  1 09:58:29 kyos python3[659]: sess[c1]: user<ky> Remote<0> Active<1> Service<lightdm-autologin>
+Jan  1 09:58:29 kyos python3[659]: activeUser :  None
+Jan  1 09:58:29 kyos pulseaudio[1045]: Failed to find a working profile.
+Jan  1 09:58:29 kyos pulseaudio[1045]: Failed to load module "module-alsa-card" (argument: "device_id="2" name="platform-hdmiin-sound" card_name="alsa_card.platform-hdmiin-sound" namereg_fail=false tsched=yes fixed_latency_range=no ignore_dB=no deferred_volume=yes use_ucm=yes avoid_resampling=no card_properties="module-udev-detect.discovered=1""): initialization failed.
+

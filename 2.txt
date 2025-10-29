@@ -1,0 +1,72 @@
+root@kyos:/etc/plymouth# plymouthd --tty=/dev/tty1 --mode=boot --debug &
+[1] 5481
+root@kyos:/etc/plymouth# 01:49:41.364 main.c:1977:initialize_environment                            : initializing minimal work environment
+01:49:41.364 main.c:1855:check_verbosity                                   : checking if tracing should be enabled
+01:49:41.364 ply-utils.c:910:ply_get_kernel_command_line                   : opening /proc/cmdline
+01:49:41.364 ply-utils.c:918:ply_get_kernel_command_line                   : reading kernel command line
+01:49:41.364 ply-utils.c:937:ply_get_kernel_command_line                   : Kernel command line is: 'storagemedia=emmc androidboot.storagemedia=emmc androidboot.mode=normal  androidboot.verifiedbootstate=orange rw rootwait earlycon=uart8250,mmio32,0xfeb50000 console=ttyFIQ0 irqchip.gicv3_pseudo_nmi=0 root=PARTUUID=614e0000-0000 systemd.unified_cgroup_hierarchy=0 androidboot.fwver=ddr-v1.15-d5483af87d,spl-v1.13,bl31-v1.45,bl32-v1.15,uboot-dbcace72af-06/23/2025
+'
+01:49:41.364 main.c:1904:check_verbosity                                   : tracing shouldn't be enabled!
+01:49:41.364 main.c:1923:check_logging                                     : checking if console messages should be redirected and logged
+01:49:41.364 main.c:1932:check_logging                                     : logging will be enabled!
+01:49:41.364 main.c:2002:initialize_environment                            : source built on Oct 23 2023
+01:49:41.364 main.c:2013:initialize_environment                            : Making sure /run/plymouth exists
+01:49:41.364 ply-utils.c:596:ply_create_directory                          : directory '/run/plymouth' already exists
+01:49:41.364 main.c:2017:initialize_environment                            : initialized minimal work environment
+01:49:41.364 main.c:714:get_cache_file_for_mode                            : returning cache file '/var/lib/plymouth//boot-duration'
+01:49:41.364 main.c:294:load_settings                                      : Trying to load /etc/plymouth//plymouthd.conf
+01:49:41.364 ply-key-file.c:175:ply_key_file_load_group                    : trying to load group Daemon
+01:49:41.364 ply-key-file.c:262:ply_key_file_load_groups                   : key file has no more groups
+01:49:41.364 main.c:308:load_settings                                      : Checking if /run/plymouth/themes/spinner/spinner.plymouth exists
+01:49:41.364 main.c:310:load_settings                                      : /run/plymouth/themes/spinner/spinner.plymouth not found, fallbacking to /usr/share/plymouth/themes/
+01:49:41.364 ply-key-file.c:359:ply_key_file_get_raw_value                 : key file does not have entry for key 'ShowDelay'
+01:49:41.364 ply-key-file.c:359:ply_key_file_get_raw_value                 : key file does not have entry for key 'DeviceTimeout'
+01:49:41.364 ply-key-file.c:359:ply_key_file_get_raw_value                 : key file does not have entry for key 'DeviceScale'
+01:49:41.364 main.c:441:find_system_default_splash                         : System configured theme file is '/usr/share/plymouth/themes/spinner/spinner.plymouth'
+01:49:41.364 main.c:294:load_settings                                      : Trying to load /run/plymouth/plymouthd.defaults
+01:49:41.364 ply-key-file.c:84:ply_key_file_open_file                      : Failed to open key file /run/plymouth/plymouthd.defaults: No such file or directory
+01:49:41.364 main.c:451:find_distribution_default_splash                   : failed to load /run/plymouth/plymouthd.defaults, trying /usr/share/plymouth//
+01:49:41.364 main.c:294:load_settings                                      : Trying to load /usr/share/plymouth//plymouthd.defaults
+01:49:41.364 ply-key-file.c:84:ply_key_file_open_file                      : Failed to open key file /usr/share/plymouth//plymouthd.defaults: No such file or directory
+01:49:41.364 main.c:453:find_distribution_default_splash                   : failed to load /usr/share/plymouth//plymouthd.defaults
+01:49:41.364 main.c:886:plymouth_should_show_default_splash                : checking if plymouth should show default splash
+01:49:41.364 main.c:923:plymouth_should_show_default_splash                : no default splash because kernel command line lacks "splash" or "rhgb"
+01:49:41.365 ply-key-file.c:84:ply_key_file_open_file                      : Failed to open key file /etc/vconsole.conf: No such file or directory
+01:49:41.365 ply-device-manager.c:915:create_devices_from_terminals        : checking for consoles
+01:49:41.365 ply-device-manager.c:693:add_consoles_from_file               : opening /sys/class/tty/console/active
+01:49:41.365 ply-device-manager.c:701:add_consoles_from_file               : reading file
+01:49:41.365 ply-device-manager.c:739:add_consoles_from_file               : console /dev/tty1 found!
+01:49:41.365 ply-device-manager.c:1011:ply_device_manager_watch_devices    : Creating non-graphical devices, since renderers are being explicitly skipped
+01:49:41.365 ply-device-manager.c:827:create_devices_for_terminal_and_rende: creating devices for  (renderer type: 4294967295) (terminal: /dev/tty1)
+01:49:41.365 main.c:1006:on_keyboard_added                                 : listening for keystrokes
+01:49:41.365 main.c:1010:on_keyboard_added                                 : listening for escape
+01:49:41.365 main.c:1014:on_keyboard_added                                 : listening for backspace
+01:49:41.365 main.c:1018:on_keyboard_added                                 : listening for enter
+01:49:41.365 ply-terminal.c:637:ply_terminal_open                          : trying to open terminal '/dev/tty1'
+01:49:41.365 ply-terminal.c:430:ply_terminal_refresh_geometry              : looking up terminal text geometry
+01:49:41.365 ply-terminal.c:442:ply_terminal_refresh_geometry              : terminal is now 80x25 text cells
+01:49:41.365 ply-terminal.c:480:get_active_vt                              : Remembering that initial vt is 7
+01:49:41.365 ply-device-manager.c:800:create_text_displays_for_terminal    : adding text display for terminal /dev/tty1
+01:49:41.365 main.c:2314:main                                              : entering event loop
+
+[1]+  已完成               plymouthd --tty=/dev/tty1 --mode=boot --debug
+root@kyos:/etc/plymouth#
+root@kyos:/etc/plymouth#
+root@kyos:/etc/plymouth# plymouth show-splash --debug
+01:50:01.479 ply-boot-server.c:350:print_connection_process_identity       : connection is from pid 5484 (plymouth show-splash --debug) with parent pid 2154 (bash)
+01:50:01.479 ply-boot-server.c:449:ply_boot_connection_on_request          : got show splash request
+01:50:01.479 main.c:854:plymouth_should_ignore_show_splash_calls           : checking if plymouth should be running
+01:50:01.479 main.c:955:on_show_splash                                     : at least one display already available, so loading splash
+01:50:01.479 main.c:886:plymouth_should_show_default_splash                : checking if plymouth should show default splash
+01:50:01.480 main.c:923:plymouth_should_show_default_splash                : no default splash because kernel command line lacks "splash" or "rhgb"
+01:50:01.480 main.c:367:show_detailed_splash                               : Showing detailed splash screen
+01:50:01.480 main.c:1699:load_built_in_theme                               : Loading built-in theme
+01:50:01.480 plugins/splash/details/plugin.c:159:create_plugin             : creating plugin
+01:50:01.480 main.c:1714:load_built_in_theme                               : attaching plugin to event loop
+01:50:01.480 main.c:1717:load_built_in_theme                               : attaching progress to plugin
+01:50:01.480 ply-boot-splash.c:174:ply_boot_splash_add_text_display        : adding 80x25 text display
+01:50:01.480 ply-terminal.c:633:ply_terminal_open                          : terminal /dev/tty1 is already open
+01:50:01.480 ply-boot-splash.c:486:ply_boot_splash_show                    : showing splash screen
+01:50:01.480 ply-device-manager.c:1114:ply_device_manager_activate_keyboard: activating keyboards
+01:50:01.480 ply-event-loop.c:1142:ply_event_loop_free_destinations_for_sou: freeing destination (1, 0x558a838418, 0x558a837a80) of fd 8
+root@kyos:/etc/plymouth#
